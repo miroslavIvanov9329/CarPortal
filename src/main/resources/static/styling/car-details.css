@@ -1,0 +1,264 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.top-nav .logo img {
+    max-width: 100%;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-nav li {
+    margin-right: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.top-nav a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+}
+
+/* Main Styles */
+main {
+    padding: 20px;
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Featured Cars Section Styles */
+.featured-cars {
+    margin-top: 30px;
+}
+
+.featured-cars h2 {
+    color: #333;
+    text-align: center;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car-listing {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-listing:hover {
+    transform: scale(1.05);
+}
+
+.car-listing img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.car-listing h3 {
+    color: #333;
+}
+
+.car-listing p {
+    color: #666;
+}
+
+.car-listing a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.car-listing a:hover {
+    background-color: #2980b9;
+}
+
+/* About Us Page Styles */
+.about-us {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-us h2 {
+    color: #333;
+}
+
+.about-us p {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Contact Page Styles */
+.contact {
+    margin-top: 30px;
+}
+
+.contact h2 {
+    color: #333;
+}
+
+.contact form {
+    margin-top: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.contact button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #2980b9;
+}
+
+/* Services Page Styles */
+.services {
+    margin-top: 30px;
+}
+
+.services h2 {
+    color: #333;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin-bottom: 15px;
+}
+
+/* Blog Page Styles */
+.blog {
+    margin-top: 30px;
+}
+
+.blog h2 {
+    color: #333;
+}
+
+.blog .post {
+    margin-top: 20px;
+}
+
+.blog .post h3 {
+    color: #333;
+}
+
+.blog .post p {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.blog .post a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog .post a:hover {
+    text-decoration: underline;
+}
+
+/* View Details Page */
+.view-details {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-details .car-details {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.view-details img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.view-details h2 {
+    color: #333;
+}
+
+.view-details p {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* ... (any additional styles or customization you need) ... */

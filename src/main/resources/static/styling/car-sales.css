@@ -1,0 +1,239 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-nav li {
+    margin-right: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.top-nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hero h2 {
+    color: #333;
+}
+
+.featured-cars {
+    margin-top: 30px;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car-listing {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex; /* Added flex container */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.car-listing:hover {
+    transform: scale(1.05);
+}
+
+.car-listing img {
+    max-width: 100%;
+    max-height: 120px; /* Adjust as needed */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.car-listing h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.car-listing p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.car-listing a {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.car-listing a:hover {
+    background-color: #2980b9;
+}
+
+.sell-your-car {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.sell-your-car h2 {
+    color: #333;
+}
+
+.sell-your-car p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.sell-your-car a {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sell-your-car a:hover {
+    background-color: #2980b9;
+}
+
+.services {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #333;
+}
+
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services li {
+    margin-bottom: 10px;
+}
+
+.testimonials {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #333;
+}
+
+.quote {
+    border-bottom: 1.5px solid #3498db;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.author {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+}
+
+/* ... (previous CSS code) ... */
+
+.featured-cars h2 {
+    color: #333;
+    text-align: center;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.car-listing {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-listing:hover {
+    transform: scale(1.05);
+}
+
+.car-listing img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.car-listing h3 {
+    color: #333;
+}
+
+.car-listing p {
+    color: #666;
+}
+
+.car-listing a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.car-listing a:hover {
+    background-color: #2980b9;
+}
+
+/* ... (remaining CSS code) ... */
+
