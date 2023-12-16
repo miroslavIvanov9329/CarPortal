@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="services-styles.css">
-    <title>Our Services</title>
+    <title>Car Sales Portal - Services & Financing</title>
+    <link rel="stylesheet" href="styling/services.css">
 </head>
-
 <body>
+
 <header>
-    <h1>Our Services</h1>
+    <nav class="top-nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="Car Sales Logo">
+        </div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/join-us">Join Our Team</a></li>
+            <li><a href="/blog">Car Insights</a></li>
+            <li><a href="/reviews">Customer Reviews</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about-us">About Us</a></li>
+        </ul>
+    </nav>
+    <h1>Our Services & Financing</h1>
 </header>
-<main>
-    <section>
-        <h2>Web Development</h2>
-        <p>We offer top-notch web development services tailored to your needs.</p>
-        <!-- Add more services as needed -->
+
+<main class="services">
+    <section class="services-content">
+        <h2>Services Offered</h2>
+        <p>Explore our range of services designed to enhance your car-buying experience.</p>
+
+        <ul>
+            <li>Car Sales</li>
+            <li>Financing Options</li>
+            <li>Vehicle Inspections</li>
+            <li>Trade-in Services</li>
+            <li>Extended Warranties</li>
+            <!-- Add more services as needed -->
+        </ul>
+
+        <h2>Financing Solutions</h2>
+        <p>We offer flexible financing options tailored to your needs. Our financing experts are here to assist you throughout the process.</p>
+
+        <h3>Apply for Financing</h3>
+        <p>Ready to get started? Fill out our financing application form, and we'll help you find the best financing solution.</p>
+
+        <!-- Financing Form -->
+        <form>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="income">Monthly Income ($):</label>
+            <input type="number" id="income" name="income" required>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 </main>
-</body>
 
+</body>
 </html>

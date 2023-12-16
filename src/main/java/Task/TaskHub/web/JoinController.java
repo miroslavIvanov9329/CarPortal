@@ -5,11 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class HomeController {
-    
-    @GetMapping("/home")
-    public ModelAndView index() {
-        return new ModelAndView("index");
+public class JoinController {
+    @GetMapping("/join-us")
+    public ModelAndView joinUs() {
+        return new ModelAndView("join-us");
     }
-    
 }

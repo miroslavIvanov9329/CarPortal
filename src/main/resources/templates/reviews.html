@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Sales Portal - Customer Reviews</title>
+    <link rel="stylesheet" href="styling/reviews.css">
+    <script src="demo.js"></script>
+</head>
+<body>
+
+<header>
+    <nav class="top-nav">
+        <div class="logo">
+            <img src="images/logo.png" alt="Car Sales Logo">
+        </div>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/join-us">Join Our Team</a></li>
+            <li><a href="/blog">Car Insights</a></li>
+            <li><a href="/reviews">Customer Reviews</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about-us">About Us</a></li>
+        </ul>
+    </nav>
+    <h1>Customer Reviews</h1>
+</header>
+
+<!-- ... (previous HTML) ... -->
+
+<main class="reviews">
+    <section class="reviews-content">
+        <!-- Review 1 -->
+        <article class="review">
+            <div class="user-avatar">
+                <img src="images/avatar1.png" alt="User Avatar">
+            </div>
+            <div class="review-text">
+                <p class="user-name">John Doe</p>
+                <p class="review-date">December 1, 2023</p>
+                <p class="user-comment">Had a fantastic experience purchasing my dream car from Car Sales Portal! 🚗🌟 The staff was friendly and knowledgeable. The entire process was smooth, and I highly recommend them.</p>
+                <div class="like-section">
+                    <button class="like-button">Like</button>
+                    <span class="like-count">10 Likes</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Add more reviews as needed -->
+
+        <!-- Review 2 -->
+        <article class="review">
+            <div class="user-avatar">
+                <img src="images/avatar2.jpg" alt="User Avatar">
+            </div>
+            <div class="review-text">
+                <p class="user-name">Jane Smith</p>
+                <p class="review-date">November 25, 2023</p>
+                <p class="user-comment">Impressed with the variety of cars available. Found the perfect one for my needs. The team at Car Sales Portal provided excellent service. 👍</p>
+                <div class="like-section">
+                    <button class="like-button">Like</button>
+                    <span class="like-count">5 Likes</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Add more reviews as needed -->
+
+        <!-- Review 3 -->
+        <article class="review">
+            <div class="user-avatar">
+                <img src="images/avatar3.png" alt="User Avatar">
+            </div>
+            <div class="review-text">
+                <p class="user-name">Alex Johnson</p>
+                <p class="review-date">October 15, 2023</p>
+                <p class="user-comment">Outstanding customer service! The team went above and beyond to help me find the right car. Couldn't be happier with my purchase. 🌟</p>
+                <div class="like-section">
+                    <button class="like-button">Like</button>
+                    <span class="like-count">8 Likes</span>
+                </div>
+            </div>
+        </article>
+
+        <!-- Add more reviews as needed -->
+
+    </section>
+
+    <section class="add-review">
+        <h2>Add Your Review</h2>
+        <form id="reviewForm">
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName" name="userName" required>
+
+            <label for="userComment">Your Comment:</label>
+            <textarea id="userComment" name="userComment" rows="4" required></textarea>
+
+            <button type="submit" onclick="submitReview()">Submit</button>
+        </form>
+    </section>
+
+    <section class="location">
+        <h2>Our Location</h2>
+        <p>We are located at:</p>
+        <address>
+            Car Sales Portal<br>
+            1234 Main Street<br>
+            Cityville, State 56789<br>
+            Country
+        </address>
+    </section>
+</main>
+
+<!-- ... (remaining HTML) ... -->
+
+</body>
+</html>

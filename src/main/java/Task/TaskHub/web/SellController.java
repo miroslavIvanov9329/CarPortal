@@ -16,12 +16,12 @@ public class SellController {
         this.sellService = sellService;
     }
     
-    @GetMapping("/sell/car")
+    @GetMapping("/sell")
     public ModelAndView sellCar() {
         return new ModelAndView("sell");
     }
     
-    @PostMapping("/sell/car")
+    @PostMapping("/sell")
     public ModelAndView sellCar(SellCarDTO sellCarDTO) {
         
         return new ModelAndView("submission");

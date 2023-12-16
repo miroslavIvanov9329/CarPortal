@@ -14,13 +14,13 @@
             <img src="/images/logo.png" alt="Car Sales Logo">
         </div>
         <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="join-us.html">Join Our Team</a></li>
-            <li><a href="services.html">Services & Financing</a></li>
-            <li><a href="blog.html">Car Insights</a></li>
-            <li><a href="reviews.html">Customer Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/join-us">Join Our Team</a></li>
+            <li><a href="/services">Services & Financing</a></li>
+            <li><a href="/blog">Car Insights</a></li>
+            <li><a href="/reviews">Customer Reviews</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/about-us">About Us</a></li>
         </ul>
     </nav>
     <h1>Sell Your Car</h1>
@@ -50,14 +50,10 @@
             <label for="contactInfo">Contact Information:</label>
             <textarea id="contactInfo" name="contactInfo" rows="4" required></textarea>
 
-            <form th:method="post" th:action="@{/sell/car}"><button type="submit">Submit</button></form>
+            <form><button type="submit">Submit</button></form>
 
         </form>
     </section>
 </main>
-
-<footer>
-    <!-- Add footer content if needed -->
-</footer>
 </body>
 </html>

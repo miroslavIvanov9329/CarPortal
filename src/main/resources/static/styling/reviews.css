@@ -1,0 +1,170 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+nav.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.top-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav.top-nav ul li {
+    margin-right: 20px;
+}
+
+nav.top-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+main.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-content {
+    width: 80%;
+}
+
+.review {
+    background-color: #f7f7f7;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.review-text {
+    flex-grow: 1;
+}
+
+.user-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-date {
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.user-comment {
+    margin-top: 10px;
+    max-width: 80%;
+}
+
+.like-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.like-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.like-count {
+    margin-left: 10px;
+    color: #888;
+}
+
+.add-review {
+    width: 50%;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-review h2 {
+    margin-bottom: 15px;
+}
+
+.add-review form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.add-review input,
+.add-review textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.add-review button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ... (previous styles) ... */
+
+/* Location Section Styles */
+.location {
+    width: 50%;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.location h2 {
+    margin-bottom: 15px;
+}
+
+.location p,
+.location address,
+.google-map {
+    margin-bottom: 15px;
+}
+
+/* ... (remaining styles) ... */
