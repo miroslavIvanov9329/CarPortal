@@ -36,7 +36,6 @@
             <li>Vehicle Inspections</li>
             <li>Trade-in Services</li>
             <li>Extended Warranties</li>
-            <!-- Add more services as needed -->
         </ul>
 
         <h2>Financing Solutions</h2>
@@ -46,18 +45,18 @@
         <p>Ready to get started? Fill out our financing application form, and we'll help you find the best financing solution.</p>
 
         <!-- Financing Form -->
-        <form>
+        <form th:action="@{/services/submission}" method="post" th:object="${serviceDTO}">
             <label for="fullName">Full Name:</label>
-            <input type="text" id="fullName" name="fullName" required>
+            <input type="text" id="fullName" name="fullName" th:field="*{fullName}" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" th:field="*{email}" required>
 
             <label for="phone">Phone:</label>
-            <input type="tel" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" th:field="*{phone}" required>
 
             <label for="income">Monthly Income ($):</label>
-            <input type="number" id="income" name="income" required>
+            <input type="number" id="income" name="income" th:field="*{income}" required>
 
             <button type="submit">Submit</button>
         </form>
