@@ -4,33 +4,14 @@ import java.util.List;
 import java.util.Set;
 
 public class UserDTO {
-    private Long id;
     private String username;
     private String email;
-    private Set<String> roles;
-    private List<CarDTO> carsList;
+    private String password;
     
-    public UserDTO(Long id, String username, String email, Set<String> roles) {
-        this.id = id;
+    public UserDTO(String username, String email, String password) {
         this.username = username;
         this.email = email;
-        this.roles = roles;
-    }
-    
-    public UserDTO(Long id, String username, String email, Set<String> roles, List<CarDTO> carsList) {
-        this.id = id;
-        this.username = username;
-        this.email = email;
-        this.roles = roles;
-        this.carsList = carsList;
-    }
-    
-    public Long getId() {
-        return id;
-    }
-    
-    public void setId(Long id) {
-        this.id = id;
+        this.password = password;
     }
     
     public String getUsername() {
@@ -49,19 +30,11 @@ public class UserDTO {
         this.email = email;
     }
     
-    public Set<String> getRoles() {
-        return roles;
+    public String getPassword() {
+        return password;
     }
     
-    public void setRoles(Set<String> roles) {
-        this.roles = roles;
-    }
-    
-    public List<CarDTO> getCarsList() {
-        return carsList;
-    }
-    
-    public void setCarsList(List<CarDTO> carsList) {
-        this.carsList = carsList;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
