@@ -1,7 +1,8 @@
 package Task.TaskHub.service;
 
 import Task.TaskHub.model.User;
-import Task.TaskHub.model.dto.UserDTO;
+import Task.TaskHub.model.dto.UserLoginDTO;
+import Task.TaskHub.model.dto.UserRegisterDTO;
 import Task.TaskHub.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.Pbkdf2PasswordEncoder;
@@ -21,7 +22,7 @@ public class RegisterService {
         this.passwordEncoder = passwordEncoder;
     }
     
-    public boolean register(UserDTO userDTO) {
+    public boolean register(UserRegisterDTO userDTO) {
         Optional<User> existingUser = userRepository.findByUsername(userDTO.getUsername());
         if (existingUser.isPresent()) {
             return false;

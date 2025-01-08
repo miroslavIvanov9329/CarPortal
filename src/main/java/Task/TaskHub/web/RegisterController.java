@@ -1,6 +1,6 @@
 package Task.TaskHub.web;
 
-import Task.TaskHub.model.dto.UserDTO;
+import Task.TaskHub.model.dto.UserRegisterDTO;
 import Task.TaskHub.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,10 +22,10 @@ public class RegisterController {
     }
     
     @PostMapping("/register")
-    public ModelAndView registerUser(@ModelAttribute UserDTO userDTO) {
+    public ModelAndView registerUser(@ModelAttribute UserRegisterDTO userDTO) {
         boolean isRegistered = registerService.register(userDTO);
         if (isRegistered) {
-            return new ModelAndView("redirect:/auth/login").addObject("success", "Registration successful! Please log in.");
+            return new ModelAndView("redirect:/login").addObject("success", "Registration successful! Please log in.");
         } else {
             return new ModelAndView("register").addObject("error", "Username already exists.");
         }

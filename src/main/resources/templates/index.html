@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -16,13 +17,15 @@
             <img src="images/logo.png" alt="Car Sales Logo">
         </div>
         <ul>
+            <li><a href="/logout" th:if="${('loggedInUser')} == null">Logout</a></li>
             <li><a href="/join-us">Join Our Team</a></li>
             <li><a href="/services">Services & Financing</a></li>
             <li><a href="/blog">Car Insights</a></li>
             <li><a href="/reviews">Customer Reviews</a></li>
             <li><a href="/contact-us">Contact</a></li>
             <li><a href="/about-us">About Us</a></li>
-            <li><a href="/register">Register</a></li>
+            <li><a href="/register" th:if="${('loggedInUser')} != null">Register</a></li>
+            <li><a href="/login" th:if="${('loggedInUser')} != null">Login</a></li>
         </ul>
     </nav>
     <h1>Car Sales Portal</h1>
